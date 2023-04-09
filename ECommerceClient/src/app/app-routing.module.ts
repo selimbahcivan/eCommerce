@@ -11,7 +11,7 @@ const routes: Routes = [
       { path: "customers", loadChildren: () => import("./admin/admincomponents/customers/customers.module").then(module => module.CustomersModule) },
       { path: "products", loadChildren: () => import("./admin/admincomponents/products/products.module").then(module => module.ProductsModule) },
       { path: "orders", loadChildren: () => import("./admin/admincomponents/orders/orders.module").then(module => module.OrdersModule) },
-      { path: "dashboard", loadChildren: () => import("./admin/admincomponents/customers/customers.module").then(module => module.CustomersModule) }
+      // { path: "dashboard", loadChildren: () => import("./admin/admincomponents/dashboard/dashboard.module").then(module => module.DashboardModule) }
     ]
   },
   { path: "", component: HomeComponent },
