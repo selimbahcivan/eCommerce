@@ -16,7 +16,6 @@ export class CustomToastrService {
 export class ToastrOptions {
   messageType: ToastrMessageType;
   position: ToastrPosition;
-
 }
 
 export enum ToastrMessageType {

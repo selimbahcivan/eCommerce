@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'ECommerceClient';
 
   constructor(private toastrService: CustomToastrService) {
-    toastrService.message("Merhabaaaa", "Selim", {messageType : ToastrMessageType.Success, position: ToastrPosition.BottomCenter});
-    toastrService.message("123", "Selim", {messageType :ToastrMessageType.Info,position: ToastrPosition.TopFullWidth});
+    // toastrService.message("Merhabaaaa", "Selim", {messageType : ToastrMessageType.Success, position: ToastrPosition.BottomCenter});
+    // toastrService.message("123", "Selim", {messageType :ToastrMessageType.Info,position: ToastrPosition.TopFullWidth});
 
 
   }

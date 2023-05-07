@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { BaseComponent, SpinnerType } from 'src/app/base/base.component';
 import { AlertifyOptions, AlertifyService, MessageType, Position } from 'src/app/services/admin/alertify.service';
 
 @Component({
@@ -6,20 +8,12 @@ import { AlertifyOptions, AlertifyService, MessageType, Position } from 'src/app
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent extends BaseComponent {
 
-  constructor(private alertify: AlertifyService) {
-
+  constructor(private alertify: AlertifyService, spinner: NgxSpinnerService) {
+    super(spinner);
   }
-  ngOnInit(): void {
-  }
-
-  tikla() {
-    this.alertify.message("dflgdgdnfg", {
-      messageType: MessageType.Success,
-      delay: 5,
-      isDismissOthers: true,
-      position: Position.BottomCenter
-    })
+  ngOnInit() {
+    this.showSpinner(SpinnerType.BallTrianglePath);
   }
 }
