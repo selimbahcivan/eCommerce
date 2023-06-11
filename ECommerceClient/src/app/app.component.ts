@@ -18,7 +18,7 @@ export class AppComponent {
   }
 }
 
-$.get("https://localhost:44385/api/products",data => console.log(data[0]))
+// $.get("https://localhost:44385/api/products",data => console.log(data[0]))
 
 // $(document).ready(() => {
 //   alert("sjnskfgdfkjg")

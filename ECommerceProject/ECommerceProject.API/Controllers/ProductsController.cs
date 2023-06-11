@@ -1,4 +1,6 @@
-﻿using ECommerceProject.Application.Repositories.Product;
+﻿using System.Net;
+using ECommerceProject.Application.Repositories.Product;
+using ECommerceProject.Application.ViewModels.Products;
 using ECommerceProject.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,30 +19,48 @@ namespace ECommerceProject.API.Controllers
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
         }
-        [HttpPost]
-        public async Task AddProducts()
-        {
-            //await _productWriteRepository.AddRangeAsync(new()
-            //{
-            //    new() { Name = "Basketbol Topu", Price = 170, Stock = 10 },
-            //    new() { Name = "Masa", Price = 333, Stock = 15 },
-            //    new() { Name = "Kitap", Price = 555, Stock = 22 }
-            //});
-            //await _productWriteRepository.SaveAsync();
-            Product p = await _productReadRepository.GetByIdAsync(7);
-            p.Name = "TEST";
-            await _productWriteRepository.SaveAsync();
-        }
+
         [HttpGet]
-        public IActionResult GetProducts()
-        { 
-            return Ok(_productReadRepository.GetAll());
+        public async Task<IActionResult> Get()
+        {
+            return Ok(_productReadRepository.GetAll(false));
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetProductById(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            Product product = await _productReadRepository.GetByIdAsync(id);
-            return Ok(product);
+            return Ok(_productReadRepository.GetByIdAsync(id, false));
+        }
+        [HttpPost]
+        public async Task<IActionResult> Post(CreateProductViewModel model)
+        {
+
+            await _productWriteRepository.AddAsync(new()
+            {
+                Name = model.Name,
+                Price = model.Price,
+                Stock = model.Stock
+            });
+            await _productWriteRepository.SaveAsync();
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(UpdateProductViewModel model)
+        {
+            Product product = await _productReadRepository.GetByIdAsync(model.Id);
+            product.Stock = model.Stock;
+            product.Name = model.Name;
+            product.Price = model.Price;
+            await _productWriteRepository.SaveAsync();
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _productWriteRepository.RemoveAsync(id);
+            await _productWriteRepository.SaveAsync();
+            return Ok();
         }
     }
 }
