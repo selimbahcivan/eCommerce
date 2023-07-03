@@ -51,7 +51,7 @@ export class ProductsComponent extends BaseComponent {
 
     this.httpClientService.get<Product>({
       controller: "products"
-    },"11").subscribe(data => console.log(data));
+    },"11").subscribe(data => console.log(data.name));
 
   }
 }

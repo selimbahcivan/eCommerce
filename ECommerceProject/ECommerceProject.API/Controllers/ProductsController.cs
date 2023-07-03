@@ -28,7 +28,7 @@ namespace ECommerceProject.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(_productReadRepository.GetByIdAsync(id, false));
+            return Ok(await _productReadRepository.GetByIdAsync(id, false));
         }
         [HttpPost]
         public async Task<IActionResult> Post(CreateProductViewModel model)
