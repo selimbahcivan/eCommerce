@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "G55SoBSVmYY+bXcY4D4Vp5ds8nQaTHB1t/fMmPBXjhxO43uhyoizadUcxP+8BwDH2/rH6pCIhNk6VVXJRU/HBg==",
+  "dgSpecHash": "LR+bSzWGThTmH78Ieew0wTW/fs1Tu4p1PGjW9m+yCYymOGkLnWHZp+kUVBokGVCWKNpmEOD0t1XU1dRhYGXhIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\yseli\\Desktop\\ECommerce\\ECommerceProject\\ECommerceProject.Persistence\\ECommerceProject.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.3\\microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",

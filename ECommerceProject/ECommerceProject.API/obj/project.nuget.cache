@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dW0Ojgeeif94Erx6OsIilsHxJJUUJAZeDVpQeAa1WQKqRiNI8mRV3qdNAwtTEaX5g67wUqvQGBCXRLjegX5M8w==",
+  "dgSpecHash": "nDaSiIFgY/JpBG5RPp0+4921MTuMV+0ureCbZHUNtjd9UVOGK4dE6qiJDNFUNdKTcqVJb/yPVbf2d3KHwmXF2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\yseli\\Desktop\\ECommerce\\ECommerceProject\\ECommerceProject.API\\ECommerceProject.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\yseli\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\yseli\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",

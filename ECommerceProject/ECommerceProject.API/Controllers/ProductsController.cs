@@ -33,6 +33,10 @@ namespace ECommerceProject.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(CreateProductViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                
+            }
 
             await _productWriteRepository.AddAsync(new()
             {

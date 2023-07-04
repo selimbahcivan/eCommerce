@@ -292,3 +292,8 @@ C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\obj\Debug
 C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\obj\Debug\net7.0\ECommerceProject.API.pdb
 C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\obj\Debug\net7.0\ECommerceProject.API.genruntimeconfig.cache
 C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\obj\Debug\net7.0\ref\ECommerceProject.API.dll
+C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\bin\Debug\net7.0\ECommerceProject.Infrastructure.dll
+C:\Users\yseli\Desktop\ECommerce\ECommerceProject\ECommerceProject.API\bin\Debug\net7.0\ECommerceProject.Infrastructure.pdb
